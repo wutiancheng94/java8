@@ -2,7 +2,7 @@ package com.wtc.study.java8.lambda.utils;
 
 import com.wtc.study.java8.lambda.demo01.Apple;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -13,13 +13,13 @@ import java.util.List;
 public class AppleUtils {
 
     public static List<Apple> getApples() {
-        List<Apple> apples = new ArrayList<>();
-        apples.add(new Apple("green", 100));
-        apples.add(new Apple("green", 180));
-        apples.add(new Apple("green", 200));
-        apples.add(new Apple("red", 100));
-        apples.add(new Apple("red", 180));
-        apples.add(new Apple("red", 200));
-        return apples;
+
+        return  Arrays.asList(
+                new Apple("green", 100),
+                new Apple("green", 180),
+                new Apple("green", 200),
+                new Apple("red", 100),
+                new Apple("red", 180),
+                new Apple("red", 200));
     }
 }
