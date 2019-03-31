@@ -12,7 +12,7 @@ import java.util.List;
  * @create 2019/3/31
  * @since 1.0.0
  */
-public class PracticeMain {
+public class FilterApple03 {
 
     public static void main(String[] args) {
         List<Apple> apples = AppleUtils.getApples();
