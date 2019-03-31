@@ -27,8 +27,25 @@ public class FilterApple {
         List<Apple> greenApples = filterGreenApple(apples);
         System.out.println("筛选绿苹果："+ greenApples);
 
+        String color = "red";
+        List<Apple> colorApples = filterAppleByColor(apples, color);
+        System.out.println("根据颜色筛选出不同的苹果："+ colorApples);
+
     }
 
+    private static List<Apple> filterAppleByColor(List<Apple> apples, String color) {
+        List<Apple> greenApples = new ArrayList<>();
+
+        if (color != null) {
+            for (Apple apple : apples) {
+                if (color.equals(apple.getColor())) {
+                    greenApples.add(apple);
+                }
+            }
+        }
+
+        return greenApples;
+    }
 
     private static List<Apple> filterGreenApple(List<Apple> apples) {
         List<Apple> greenApples = new ArrayList<>();
