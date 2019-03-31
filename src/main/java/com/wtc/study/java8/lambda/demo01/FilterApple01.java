@@ -1,5 +1,7 @@
 package com.wtc.study.java8.lambda.demo01;
 
+import com.wtc.study.java8.lambda.utils.AppleUtils;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,13 +18,7 @@ import java.util.List;
 public class FilterApple01 {
 
     public static void main(String[] args) {
-        List<Apple> apples = new ArrayList<>();
-        apples.add(new Apple("green", 100));
-        apples.add(new Apple("green", 180));
-        apples.add(new Apple("green", 200));
-        apples.add(new Apple("red", 100));
-        apples.add(new Apple("red", 180));
-        apples.add(new Apple("red", 200));
+        List<Apple> apples = AppleUtils.getApples();
 
         List<Apple> greenApples = filterGreenApple(apples);
         System.out.println("筛选绿苹果："+ greenApples);

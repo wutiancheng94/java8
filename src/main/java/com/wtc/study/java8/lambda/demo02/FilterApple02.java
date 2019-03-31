@@ -1,6 +1,7 @@
 package com.wtc.study.java8.lambda.demo02;
 
 import com.wtc.study.java8.lambda.demo01.Apple;
+import com.wtc.study.java8.lambda.utils.AppleUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,18 +17,14 @@ import java.util.List;
 public class FilterApple02 {
 
     public static void main(String[] args) {
-        List<Apple> apples = new ArrayList<>();
-        apples.add(new Apple("green", 100));
-        apples.add(new Apple("green", 180));
-        apples.add(new Apple("green", 200));
-        apples.add(new Apple("red", 100));
-        apples.add(new Apple("red", 180));
-        apples.add(new Apple("red", 200));
+        List<Apple> apples = AppleUtils.getApples();
 
         System.out.println("筛选绿苹果："+ filterApple(apples, new AppleGreenPredicate()));
 
         System.out.println("筛选出体重大于150g的苹果" + filterApple(apples, new AppleHeavyWeightPredicate()));
     }
+
+
 
     private static List<Apple> filterApple(List<Apple> apples, Predicate predicate) {
         List<Apple> screenApple = new ArrayList<>();
