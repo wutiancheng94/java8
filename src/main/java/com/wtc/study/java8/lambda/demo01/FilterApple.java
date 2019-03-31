@@ -31,6 +31,21 @@ public class FilterApple {
         List<Apple> colorApples = filterAppleByColor(apples, color);
         System.out.println("根据颜色筛选出不同的苹果："+ colorApples);
 
+        int weight = 150;
+        List<Apple> weightApples = filterAppleByWeight(apples, weight);
+        System.out.println("筛选出体重大于150g的苹果" + weightApples);
+    }
+
+    private static List<Apple> filterAppleByWeight(List<Apple> apples, int weight) {
+        List<Apple> weightApples = new ArrayList<>();
+
+        for (Apple apple : apples) {
+            if (weight < apple.getWeight()) {
+                weightApples.add(apple);
+            }
+        }
+
+        return weightApples;
     }
 
     private static List<Apple> filterAppleByColor(List<Apple> apples, String color) {
