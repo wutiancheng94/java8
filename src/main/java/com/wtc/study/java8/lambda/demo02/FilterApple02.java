@@ -7,6 +7,8 @@ import java.util.List;
 
 /**
  * 行为参数化  使用策略模式来应对不同的需求
+ *
+ *  filterApples方法的行为取决于通过Predicate对象传递的代码，也就是说把filterApples方法的行为参数化了！
  * @author 吴天成
  * @create 2019/3/31
  * @since 1.0.0
