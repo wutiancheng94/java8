@@ -1,7 +1,7 @@
 package com.wtc.study.java8.lambda.second.demo07;
 
 import com.wtc.study.java8.lambda.second.demo01.Apple;
-import com.wtc.study.java8.lambda.utils.AppleUtils;
+import com.wtc.study.java8.utils.ListUtils;
 
 import java.util.Comparator;
 import java.util.List;
@@ -16,7 +16,7 @@ import java.util.List;
 public class FilterApple07 {
 
     public static void main(String[] args) {
-        List<Apple> apples = AppleUtils.getApples();
+        List<Apple> apples = ListUtils.getApples();
 
         apples.sort(new Comparator<Apple>() {
             @Override

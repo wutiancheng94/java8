@@ -2,7 +2,7 @@ package com.wtc.study.java8.lambda.third.demo03;
 
 import com.wtc.study.java8.lambda.second.demo01.Apple;
 import com.wtc.study.java8.lambda.second.demo02.Predicate;
-import com.wtc.study.java8.lambda.utils.AppleUtils;
+import com.wtc.study.java8.utils.ListUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,7 @@ import java.util.List;
 public class PredicateDemo {
 
     public static void main(String[] args) {
-        List<Apple> apples = AppleUtils.getApples();
+        List<Apple> apples = ListUtils.getApples();
         System.out.println(filter(apples, (Apple a) -> a.getWeight()>150));
     }
 

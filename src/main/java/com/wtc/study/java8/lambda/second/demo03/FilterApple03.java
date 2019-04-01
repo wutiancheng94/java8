@@ -1,7 +1,7 @@
 package com.wtc.study.java8.lambda.second.demo03;
 
 import com.wtc.study.java8.lambda.second.demo01.Apple;
-import com.wtc.study.java8.lambda.utils.AppleUtils;
+import com.wtc.study.java8.utils.ListUtils;
 
 import java.util.List;
 
@@ -15,7 +15,7 @@ import java.util.List;
 public class FilterApple03 {
 
     public static void main(String[] args) {
-        List<Apple> apples = AppleUtils.getApples();
+        List<Apple> apples = ListUtils.getApples();
         prettyPrintApple(apples, new WeightPrintApple());
         prettyPrintApple(apples, new ColorPrintApple());
     }

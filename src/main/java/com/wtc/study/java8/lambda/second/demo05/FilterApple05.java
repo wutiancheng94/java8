@@ -1,7 +1,7 @@
 package com.wtc.study.java8.lambda.second.demo05;
 
 import com.wtc.study.java8.lambda.second.demo01.Apple;
-import com.wtc.study.java8.lambda.utils.AppleUtils;
+import com.wtc.study.java8.utils.ListUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ import java.util.List;
 public class FilterApple05 {
 
     public static void main(String[] args) {
-        List<Apple> apples = AppleUtils.getApples();
+        List<Apple> apples = ListUtils.getApples();
         System.out.println(filterApple(apples, (Apple a) -> "red".equals(a.getColor())));
     }
 
