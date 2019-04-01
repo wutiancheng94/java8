@@ -1,4 +1,4 @@
-package com.wtc.study.java8.lambda.third;
+package com.wtc.study.java8.lambda.third.demo01;
 
 /**
  * 〈自定义函数式接口〉

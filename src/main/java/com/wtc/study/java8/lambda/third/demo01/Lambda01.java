@@ -1,6 +1,6 @@
+package com.wtc.study.java8.lambda.third.demo01;
 
 import com.wtc.study.java8.lambda.second.demo01.Apple;
-import com.wtc.study.java8.lambda.third.MyFunctionInterface;
 
 import java.util.function.BiConsumer;
 import java.util.function.Function;
