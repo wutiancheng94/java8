@@ -1,4 +1,4 @@
-package com.wtc.study.java8.lambda.demo02;
+package com.wtc.study.java8.lambda.second.demo02;
 
 /**
  * 〈过滤接口〉

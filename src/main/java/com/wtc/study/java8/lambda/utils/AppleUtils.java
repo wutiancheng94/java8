@@ -1,6 +1,6 @@
 package com.wtc.study.java8.lambda.utils;
 
-import com.wtc.study.java8.lambda.demo01.Apple;
+import com.wtc.study.java8.lambda.second.demo01.Apple;
 
 import java.util.Arrays;
 import java.util.List;

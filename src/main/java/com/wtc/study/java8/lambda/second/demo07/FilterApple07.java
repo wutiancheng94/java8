@@ -1,6 +1,6 @@
-package com.wtc.study.java8.lambda.demo07;
+package com.wtc.study.java8.lambda.second.demo07;
 
-import com.wtc.study.java8.lambda.demo01.Apple;
+import com.wtc.study.java8.lambda.second.demo01.Apple;
 import com.wtc.study.java8.lambda.utils.AppleUtils;
 
 import java.util.Comparator;

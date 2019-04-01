@@ -1,6 +1,6 @@
-package com.wtc.study.java8.lambda.demo02;
+package com.wtc.study.java8.lambda.second.demo02;
 
-import com.wtc.study.java8.lambda.demo01.Apple;
+import com.wtc.study.java8.lambda.second.demo01.Apple;
 
 /**
  * 筛选绿色苹果

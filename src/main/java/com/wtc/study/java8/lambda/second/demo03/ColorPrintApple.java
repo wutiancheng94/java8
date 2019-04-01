@@ -1,6 +1,6 @@
-package com.wtc.study.java8.lambda.demo03;
+package com.wtc.study.java8.lambda.second.demo03;
 
-import com.wtc.study.java8.lambda.demo01.Apple;
+import com.wtc.study.java8.lambda.second.demo01.Apple;
 
 /**
  * 打印苹果的颜色

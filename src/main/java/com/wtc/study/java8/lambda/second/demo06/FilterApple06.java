@@ -1,7 +1,7 @@
-package com.wtc.study.java8.lambda.demo06;
+package com.wtc.study.java8.lambda.second.demo06;
 
-import com.wtc.study.java8.lambda.demo01.Apple;
-import com.wtc.study.java8.lambda.demo02.Predicate;
+import com.wtc.study.java8.lambda.second.demo01.Apple;
+import com.wtc.study.java8.lambda.second.demo02.Predicate;
 import com.wtc.study.java8.lambda.utils.AppleUtils;
 
 import java.util.ArrayList;

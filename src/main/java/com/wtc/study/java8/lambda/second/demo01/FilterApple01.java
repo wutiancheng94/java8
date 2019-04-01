@@ -1,4 +1,4 @@
-package com.wtc.study.java8.lambda.demo01;
+package com.wtc.study.java8.lambda.second.demo01;
 
 import com.wtc.study.java8.lambda.utils.AppleUtils;
 
