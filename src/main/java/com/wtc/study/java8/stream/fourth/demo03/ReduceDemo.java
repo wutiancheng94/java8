@@ -26,11 +26,15 @@ public class ReduceDemo {
         method3(ints);
 
         //  求最大值和最小值
-        ints.stream().reduce(Integer::max).ifPresent(s -> System.out.println("最大值：" + s));
-        ints.stream().reduce(Integer::min).ifPresent(s -> System.out.println("最小值：" + s));
+        method4(ints);
 
         //  用map和reduce方法数一数流中有多少个菜
         List<Dish> dishs = ListUtils.getDishs();
+        method5(dishs);
+
+    }
+
+    private static void method5(List<Dish> dishs) {
         Optional<Integer> reduce = dishs.stream()
                 .distinct()
                 .map(d -> 1)
@@ -38,6 +42,11 @@ public class ReduceDemo {
         if (reduce.isPresent()) {
             System.out.println(reduce.get());
         }
+    }
+
+    private static void method4(List<Integer> ints) {
+        ints.stream().reduce(Integer::max).ifPresent(s -> System.out.println("最大值：" + s));
+        ints.stream().reduce(Integer::min).ifPresent(s -> System.out.println("最小值：" + s));
     }
 
     private static void method3(List<Integer> ints) {
