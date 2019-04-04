@@ -1,4 +1,4 @@
-package com.wtc.study.java8.stream.fourth.demo06;
+package com.wtc.study.java8.stream.fifth.demo04;
 
 import java.util.stream.Stream;
 

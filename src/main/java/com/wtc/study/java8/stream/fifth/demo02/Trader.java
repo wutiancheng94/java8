@@ -1,11 +1,11 @@
-package com.wtc.study.java8.stream.fourth.demo04;
+package com.wtc.study.java8.stream.fifth.demo02;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * 交易单
+ * 交易员
  *
  * @author 吴天成
  * @create 2019/4/4
@@ -14,11 +14,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Transaction {
+public class Trader {
 
-    private Trader trader;
+    private String name;
 
-    private int year;
-
-    private int value;
+    private String city;
 }

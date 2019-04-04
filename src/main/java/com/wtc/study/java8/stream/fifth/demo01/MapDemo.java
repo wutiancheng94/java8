@@ -1,4 +1,4 @@
-package com.wtc.study.java8.stream.fourth.demo03;
+package com.wtc.study.java8.stream.fifth.demo01;
 
 import com.wtc.study.java8.stream.fourth.demo01.Dish;
 import com.wtc.study.java8.utils.ListUtils;

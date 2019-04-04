@@ -3,6 +3,8 @@ package com.wtc.study.java8.utils;
 import com.wtc.study.java8.lambda.second.demo01.Apple;
 import com.wtc.study.java8.stream.fourth.demo01.Dish;
 import com.wtc.study.java8.stream.fourth.demo01.Type;
+import com.wtc.study.java8.stream.fifth.demo02.Trader;
+import com.wtc.study.java8.stream.fifth.demo02.Transaction;
 
 import java.util.Arrays;
 import java.util.List;
@@ -36,5 +38,20 @@ public class ListUtils {
                 new Dish("pizza", true, 550, Type.OTHER),
                 new Dish("prawns", false, 300, Type.FISH),
                 new Dish("salmon", false, 450, Type.FISH) );
+    }
+
+    public static List<Transaction> getTransactions() {
+        Trader raoul = new Trader("Raoul", "Cambridge");
+        Trader mario = new Trader("Mario","Milan");
+        Trader alan = new Trader("Alan","Cambridge");
+        Trader brian = new Trader("Brian","Cambridge");
+
+        return Arrays.asList(
+                new Transaction(brian, 2011, 300),
+                new Transaction(raoul, 2012, 1000),
+                new Transaction(raoul, 2011, 400),
+                new Transaction(mario, 2012, 710),
+                new Transaction(mario, 2012, 700),
+                new Transaction(alan, 2012, 950));
     }
 }
